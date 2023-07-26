@@ -39,8 +39,8 @@
 <body class="lato">
     <!-- Header-section  -->
     <header>
-        <div class="navbar max-w-screen-xl px-0 md:px-16 lg:px-8 gap-12 mx-auto md:bg-red-color md:rounded-full py-3">
-            <div class="flex-1 hidden lg:block">
+        <div class="navbar max-w-screen-xl px-0 md:px-16 lg:px-8 gap-12 mx-auto lg:bg-red-color lg:rounded-full py-3">
+            <div class="flex-1 hidden md:hidden lg:block">
                 <ul class="flex gap-7 text-white text-base">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -51,21 +51,21 @@
             </div>
             <div class="navbar-start lg:pl-[185px]">
                 <a
-                    class="btn bg-transparent border-none hover:bg-transparent normal-case text-black md:text-white text-2xl"><img
+                    class="btn bg-transparent border-none hover:bg-transparent normal-case text-black lg:text-white text-2xl"><img
                         src="./images/logo.png" class="w-8 md:w-10" alt="">Fruit Burst</a>
             </div>
             <div class="flex-none ">
-                <div class="form-control hidden md:block">
-                    <div> <input type="text" placeholder="Search here"
-                            class="relative input rounded-full input-bordered md:w-72" /><span> <i
-                                class="fa-solid fa-magnifying-glass text-2xl absolute lg:right-[360px] lg:top-[20px] md:top-[21px] md:right-[85px]"
+                <div class="form-control hidden lg:block">
+                    <div class="navbar max-w-screen-xl relative"> <input type="text" placeholder="Search here"
+                            class="relative input rounded-full input-bordered" /><span> <i
+                                class="fa-solid fa-magnifying-glass text-2xl absolute right-[20px] top-[15px]"
                                 style="color: #ff0000;"></i></span></div>
 
                 </div>
 
                 <!-- dropdown section  -->
                 <div class="w-full">
-                    <div class="dropdown dropdown-end md:hidden text-right pl-[110px]">
+                    <div class="dropdown dropdown-end md:block lg:hidden text-right pl-[110px] md:absolute md:right-0 md:top-3">
                         <label class="btn bg-transparent hover:bg-transparent border-none swap swap-rotate">
 
                             <!-- this hidden checkbox controls the state -->
