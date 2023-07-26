@@ -78,28 +78,54 @@
                             </svg>
 
                             <!-- close icon -->
-                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 512 512">
-                                <polygon
-                                    pred-color 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 red-color 256 289.49 red-color 366.51 289.red-color 145.49" />
-                            </svg>
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
 
                         </label>
                         <ul tabindex="0"
                             class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                            <li>
-                                <a class="justify-between">
-                                    Profile
-                                    <span class="badge">New</span>
-                                </a>
-                            </li>
-                            <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Fruit</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+    <!-- Curousel section-->
+        <section class="max-w-screen-xl px-8 mx-auto my-5 md:mb-20">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/banner1.png" class="w-full" />
+                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 
     <!-- main-section  -->
@@ -393,59 +419,62 @@
         <div class="hero-content p-0 text-center text-neutral-content">
             <div class="max-w-md top-12">
               <h1 class="mb-5 md:text-5xl text-3xl font-extrabold text-tittle-text">Why Choose Us</h1>
-              <p class="mb-28 text-base text-p-text md:text-lg font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p class="md:mb-24 mb-16 text-base text-p-text md:text-lg font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             </div>
 
        <!-- card-section  -->
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ">
-
+                <!-- image for mobile device  -->
+                <div class="md:hidden block mb-14">
+                    <img src="./images/whychoose1.png"alt="">
+                </div>
            <div>
                  <!-- team-card-1 -->
-                 <div class="flex flex-col md:flex-row gap-4 mb-10">
-                    <img src="./images/people.png" class="w-14 h-14" alt="">
+                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:text-left text-center">
+                    <img src="./images/people.png" class="w-14 h-14 mx-auto" alt="">
                     <div class="space-y-2">
                         <h1 class="text-tittle-text md:text-2xl text-xl font-bold">Dedicated Team</h1>
-                        <hr class="w-24 border-[#12121256] border-b">
+                        <hr class="w-24 border-[#12121256] md:mx-0 mx-auto border-b">
                         <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
                 </div>
 
                  <!-- team-card-2 -->
-                <div class="flex flex-col md:flex-row gap-4 mb-10">
-                    <img src="./images/heart.png" class="w-14 h-14" alt="">
+                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:text-left text-center">
+                    <img src="./images/heart.png" class="w-14 h-14 mx-auto" alt="">
                     <div class="space-y-2">
                         <h1 class="text-tittle-text md:text-2xl text-xl font-bold">Fresh is Best</h1>
-                        <hr class="w-24 border-[#12121256] border-b">
+                        <hr class="w-24 border-[#12121256] md:mx-0 mx-auto border-b">
                         <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
                 </div>
 
                  <!-- team-card-3 -->
-                <div class="flex flex-col md:flex-row gap-4 mb-10">
-                    <img src="./images/gift.png" class="w-14 h-14" alt="">
+                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:text-left text-center">
+                    <img src="./images/gift.png" class="w-14 h-14 mx-auto" alt="">
                     <div class="space-y-2">
                         <h1 class="text-tittle-text md:text-2xl text-xl font-bold">Gift Certificates</h1>
-                        <hr class="w-24 border-[#12121256] border-b">
+                        <hr class="w-24 border-[#12121256] md:mx-0 mx-auto border-b">
                         <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
                 </div>
 
            </div>
                 <!-- middle image  -->
-                <div>
+                <div class="hidden lg:block">
                     <img src="./images/whychoose1.png"alt="">
                 </div>
                 
            <!-- right team  -->
-            <div class="items-center md:text-right mt-10 md:mt-0">
+            <div class="items-center text-center md:text-right mt-10 md:mt-0">
                 <!-- team-card-4 -->
                 <div class="flex flex-col md:flex-row lg:flex-row-reverse gap-4 mb-10">
-                    <img src="./images/supplier.png" class="w-14 h-14" alt="">
+                    <img src="./images/supplier.png" class="w-14 h-14 mx-auto md:m-0" alt="">
                     <div class="space-y-2">
                         <h1 class="text-tittle-text md:text-2xl text-xl font-bold">Integrated Supplier</h1>
                         <div class="flex md:flex-row-reverse">
-                            <hr class="w-24 border-[#12121256] border-b">
+                            <hr class="w-24 border-[#12121256] border-b mx-auto md:mx-0">
                         </div>
                         <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
@@ -453,11 +482,11 @@
 
                  <!-- team-card-5 -->
                  <div class="flex flex-col md:flex-row lg:flex-row-reverse gap-4 mb-10">
-                    <img src="./images/icecream.png" class="w-14 h-14" alt="">
+                    <img src="./images/icecream.png" class="w-14 h-14 mx-auto md:m-0" alt="">
                     <div class="space-y-2 ">
                         <h1 class="text-tittle-text md:text-2xl text-xl font-bold">Sustainable Practice</h1>
                         <div class="flex md:flex-row-reverse">
-                            <hr class="w-24 border-[#12121256] border-b">
+                            <hr class="w-24 border-[#12121256] border-b mx-auto md:mx-0">
                         </div>
                         <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
@@ -465,11 +494,11 @@
 
               <!-- team-card-6 -->
               <div class="flex flex-col md:flex-row lg:flex-row-reverse gap-4 mb-10">
-                <img src="./images/like.png" class="w-14 h-14" alt="">
+                <img src="./images/like.png" class="w-14 h-14 mx-auto md:m-0" alt="">
                 <div class="space-y-2">
                     <h1 class="text-tittle-text md:text-2xl text-xl font-semibold">The Benefits Only</h1>
                     <div class="flex md:flex-row-reverse">
-                        <hr class="w-24 border-[#12121256] border-b">
+                        <hr class="w-24 border-[#12121256] border-b mx-auto md:mx-0">
                     </div>
                     <p class="text-p-text font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
